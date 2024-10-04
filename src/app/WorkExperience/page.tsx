@@ -1,5 +1,6 @@
 "use client";
 import {useState} from 'react';
+import styles from './Experience.module.css';
 
 interface ExpCard{
     id: number;
@@ -48,26 +49,33 @@ const experienceItems: ExpCard[] =
         }
     ]
 
-export default function Experience(){
-    const [selectedId, setSelectedId] = useState<number| null>(null);
-
-    return (
-        <div>
-            <h2> WHAT I DO</h2>
-            {experienceItems.map((exp) => (
-                <div key={exp.id}>
-                    <button onClick={() => setSelectedId(exp.id)}>
-                        {exp.companyName}
-                    </button>
-                    {selectedId === exp.id && (
-                        <div>
-                            <h3>{exp.roleName}</h3>
-                            <p>{exp.duration}</p>
-                            <p>{exp.description}</p>
-                        </div>
-                    )}
+    export default function Experience(){
+        const [selectedId, setSelectedId] = useState<number>(experienceItems[0].id);
+    
+        return (
+            <div className={styles.experience}>
+                <h2>Where I've Worked</h2>
+                <div className={styles.experienceContent}>
+                    <div className={styles.companyList}>
+                        {experienceItems.map((exp) => (
+                            <a key={exp.id} className={styles.companyItem} onClick={() => setSelectedId(exp.id)}>
+                                {exp.companyName}
+                            </a>
+                        ))}
+                    </div>
+                    <div>
+                        {experienceItems.map((exp) => 
+                            selectedId === exp.id && (
+                            <div key={exp.id} className={styles.roleDescription}>
+                                <h3>{exp.roleName}</h3>
+                                <p>{exp.duration}</p>
+                                <p>{exp.description}</p>
+                            </div>
+                            )
+                        )}
+                    </div>
                 </div>
-            ))}
-        </div>
-    );
-}
+            </div>
+        );
+    }
+    

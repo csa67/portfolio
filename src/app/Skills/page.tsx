@@ -1,3 +1,5 @@
+import styles from './Skills.module.css';
+
 interface Props{
     title: String,
     skills: String[]
@@ -12,7 +14,7 @@ function SkillSection(section: Props){
 
 export default function Skills() {
     return (
-      <div>
+      <div className={styles.skills}>
         <h2> MY SKILLS </h2>
         <SkillSection
           title="Frontend Development"

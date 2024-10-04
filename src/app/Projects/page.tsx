@@ -1,3 +1,5 @@
+import styles from './Projects.module.css';
+import { Folder, ExternalLink } from 'react-feather';
 
 interface projectCard{
     id: number,
@@ -5,6 +7,7 @@ interface projectCard{
     description: String,
     skills: String[]
 }
+
 const projectsList: projectCard[] = [
     {
         id:1,
@@ -19,13 +22,13 @@ const projectsList: projectCard[] = [
         skills: ["Kotlin","Android","MVVM"]  
     },
     {
-        id:1,
+        id:3,
         title:"E-learning Web platform",
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus animi pariatur culpa, nulla, asperiores, fugit ipsum et magni officia tempore libero rem necessitatibus exercitationem laboriosam deleniti suscipit voluptatem enim incidunt? ",
         skills: ["Node.js","React","MondoDB"]  
     },
     {
-        id:1,
+        id:4,
         title:"Calderon bulldogs",
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus animi pariatur culpa, nulla, asperiores, fugit ipsum et magni officia tempore libero rem necessitatibus exercitationem laboriosam deleniti suscipit voluptatem enim incidunt? ",
         skills: ["Next.js","tailwind CSS","React","trpc","prisma","postgres"]  
@@ -34,17 +37,29 @@ const projectsList: projectCard[] = [
 
 export default function Projects(){
     return(
-        <div>
+
+        <div className={styles.projectSection}>
+       
             <h2> WHAT I'VE BUILT </h2>
-            {
+            <div className={styles.projects}>
+            { 
                 projectsList.map((project) => (
-                    <div>
+                    <div key={project.id} className={styles.projectCard}>
+                        <div className={styles.projectLinks}>
+                            <Folder size={24}/>
+                            <ExternalLink size={20} className={styles.linkIcon}/>
+                        </div>
                         <h3>{project.title}</h3>
                         <p>{project.description}</p>
-                        {project.skills.map((skill) => <div> <p>{skill}</p> </div>)}
+                        <div className={styles.projectSkills}> 
+                        {project.skills.map((skill,index) => <p key={index} className={styles.projectSkillItem}>{skill}</p> )}
+                        </div>
                         </div>
                 ))
+                
             }
+            </div>
+            <button>Show More</button>
         </div>
     )
 }

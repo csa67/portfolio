@@ -23,15 +23,15 @@ export default function Home() {
         <section id="about" className={styles.aboutSection}>
          <AboutMe/>
          </section>
-         <section id="experience" className={styles.aboutSection}>
+        
          <Experience/>
-         </section>
+    
          <section id="skills" className={styles.aboutSection}>
          <Skills/>
          </section>
-         <section id="projects" className={styles.aboutSection}>
+      
          <Projects/>
-         </section>
+
          <section id="contact" className={styles.aboutSection}>
             <ContactMe />
           </section>
