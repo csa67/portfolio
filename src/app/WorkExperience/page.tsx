@@ -58,7 +58,9 @@ const experienceItems: ExpCard[] =
                 <div className={styles.experienceContent}>
                     <div className={styles.companyList}>
                         {experienceItems.map((exp) => (
-                            <a key={exp.id} className={styles.companyItem} onClick={() => setSelectedId(exp.id)}>
+                            <a key={exp.id} 
+                            className={`${styles.companyItem} ${selectedId === exp.id ? styles.selected : ''}`}
+                            onClick={() => setSelectedId(exp.id)}>
                                 {exp.companyName}
                             </a>
                         ))}
@@ -69,7 +71,11 @@ const experienceItems: ExpCard[] =
                             <div key={exp.id} className={styles.roleDescription}>
                                 <h3>{exp.roleName}</h3>
                                 <p>{exp.duration}</p>
-                                <p>{exp.description}</p>
+                                <ul>
+                                    {exp.description.split('. ').map((sentence, index) => (
+                                        <li key={index}>{sentence.trim()}.</li>
+                                    ))}
+                                </ul>
                             </div>
                             )
                         )}

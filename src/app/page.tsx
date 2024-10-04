@@ -32,7 +32,7 @@ export default function Home() {
          <Skills/>
          </section>
       
-         <section id="projects">
+         <section id="projects" className={styles.aboutSection}>
          <Projects/>
          </section>
 

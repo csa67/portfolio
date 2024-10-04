@@ -66,7 +66,7 @@ export default function Projects(){
                 
             }
             </div>
-            <button>Show More</button>
+            <button className={styles.showMoreButton}>Show More</button>
         </div>
     )
 }

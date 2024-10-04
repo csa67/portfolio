@@ -59,7 +59,10 @@
   gap: 24px;
 }
 
-
+.aboutSection{
+  position: relative;
+    padding-top: 30px;
+}
 
 @media (prefers-color-scheme: dark) {
   .logo {
