@@ -27,9 +27,7 @@
 }
 
 .about p{
-    display: block;
-    
-    
+    display: block; 
     line-height: 1.4;
     margin-top:20px;
 }

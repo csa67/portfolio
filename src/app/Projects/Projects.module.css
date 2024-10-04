@@ -13,6 +13,10 @@
     padding: 20px;
 }
 
+.projectSection h2{
+    font-size: 2.5rem;
+}
+
 .projectCard{
     display:flex;
     flex-direction: column;
@@ -37,23 +41,28 @@
 }
 
 .projectCard h3{
-    font-style: italic;
+    font-size: large;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
 }
 
 .projectCard p{
     max-width: 300px;
+    font-size: medium;
 }
 
 .projectSkills{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .projectSkillItem{
-    font-size: x-small;
-    margin-top: 5px;
+    font-size: small;
+    margin-top: 2px;
     margin-right: 5px;
+    color: var(--secondary-color);
 }
 
 .showMoreButton{

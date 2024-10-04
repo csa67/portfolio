@@ -66,7 +66,7 @@ export default function Projects(){
                 
             }
             </div>
-            <button className={styles.showMoreButton}>Show More</button>
+            <a href="https://github.com/csa67?tab=repositories" className={styles.showMoreButton}>Show More</a>
         </div>
     )
 }

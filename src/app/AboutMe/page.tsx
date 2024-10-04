@@ -5,11 +5,15 @@ export default function AboutMe(){
     <div className={styles.about}>
     <h4 className={styles.aboutHeader}> WHO AM I? </h4>
     <div className={styles.aboutContent}>
-    <p> Hello! My name is Sai Arathy Chava and I love creating things that live on the internet. My interest in Computer Science started when I have written my first program in Logo. Drawing a turtle steps using LT 90, RT 90 and my love for math and problem solving turned me into a CS graduate student today.
+   
+
+
+    <p>  I'm Sai Arathy Chava, and I have a passion for creating things that come to life on the web. My journey into Computer Science began with writing my first program in Logo—moving a turtle with commands like LT 90 and RT 90. That, combined with my love for math and problem-solving, has led me to where I am today as a CS graduate student.
         </p><p>
-        I have 2 years of experience working in Deloitte Digital, interned at a research lab in one of the topmost universities of India and now working as a Graduate Student Assistant at UF building web intefaces exploring different agriculture scenarios. I enjoy building software that looks good and is also built well under the hood.
+        With 2 years of experience at Deloitte Digital, an internship at one of India's top research labs, and my current role as a Graduate Student Assistant at UF, where I develop web interfaces to explore various agricultural scenarios, I enjoy crafting software that’s both visually appealing and efficient under the hood.
+
         </p><p>
-        When I'm not at the computer, I'm usually watching movies, reading, hanging out with my friends and family, or cooking for them. 
+        When I’m away from the computer, you’ll likely find me enjoying movies, reading, spending time with friends and family, or cooking something special for them.
     </p>
     </div>
     </div>)

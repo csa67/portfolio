@@ -20,6 +20,12 @@
 .verticalLine{
     width:2px;
     height:100px;
-    background-color: black;
+    background-color: #ebf5ee;
     margin-top: 20px;
+}
+
+.linkItem:hover svg{
+    stroke: var(--secondary-color); /* Change stroke color on hover */
+    transform: scale(1.2); /* Increase the size of the icon by 20% */
+    transition: stroke 0.3s ease, transform 0.3s ease;
 }
