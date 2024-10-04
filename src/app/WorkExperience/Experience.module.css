@@ -30,6 +30,16 @@
     margin-left: 40px;/* Added margin to give space between lists */
 }
 
+.companyList::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left:-20px;
+    height:100%;
+    width: 2px;
+    background-color: #333;
+}
+
 .companyItem{
     margin: 10px 0;
     width:max-content;

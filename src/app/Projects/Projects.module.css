@@ -26,12 +26,14 @@
 
 .projectLinks{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    margin-bottom: 10px;
 }
 
 .linkIcon{
-    justify-content: end;
-    align-items: end;
+    cursor: pointer;
 }
 
 .projectCard h3{

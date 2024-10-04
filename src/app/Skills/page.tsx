@@ -6,7 +6,8 @@ interface Props{
 }
 
 function SkillSection(section: Props){
-    return (<div>
+    return (
+    <div className={styles.skillsection}>
         <h4> {section.title}</h4>
         <p> {section.skills.join(", ")} </p>
     </div>)
@@ -16,6 +17,7 @@ export default function Skills() {
     return (
       <div className={styles.skills}>
         <h2> MY SKILLS </h2>
+        <div className={styles.skillsContentSections}>
         <SkillSection
           title="Frontend Development"
           skills={["React", "Next.js", "HTML", "CSS", "JavaScript", "TypeScript"]}
@@ -25,9 +27,14 @@ export default function Skills() {
           skills={["Node.js", "Express", "Java", "Spring Boot", "SQL", "NoSQL"]}
         />
         <SkillSection
+          title="Android Development"
+          skills={["Jetpack Compose", "Android Jetpack","Dagger/Hilt","Koin","Coroutines","Android Studio"]}
+        />
+        <SkillSection
           title="Tools & Others"
           skills={["Git", "Docker", "Jenkins", "Prisma", "JFrog Artifactory"]}
         />
+        </div>
       </div>
     );
   }
