@@ -24,11 +24,11 @@
     flex-direction: column;
     justify-content: center;
     margin-right: 40px;
-    max-width:600px;
+    max-width:700px;
 }
 
 .skillsection {
-    padding: 10px;
+    padding: 5px;
 }
 
 .skillsection h4{
@@ -41,4 +41,26 @@
 
 .skillsection p{
     padding: 10px;
+}
+
+@media (max-width: 900px) {
+    .skills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills h2{
+        font-size:2rem;
+        width: 100%;
+    }
+    
+    .skillsContentSections{
+        width: 100%;
+        margin: 0 8px;
+    }
+
+    .skills p{
+        font-size: smaller;
+    }
 }

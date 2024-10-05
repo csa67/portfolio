@@ -17,7 +17,7 @@ export default function Home() {
         <div className={styles.hello}>
           <p> Hi, my name is</p>
           <h2> Sai Arathy Chava. </h2>
-          <h4> I'm a software engineer specialized in building exceptional user experiences. Currently, I'm doing my Master's in Computer Science at The University of Florida.</h4>
+          <h4> I'm a software engineer specialized in building exceptional user experiences. Currently, I'm pursuing my Master's in Computer Science at the University of Florida.</h4>
         </div>
 
         <section id="about" className={styles.aboutSection}>
@@ -44,7 +44,7 @@ export default function Home() {
          <Links/>
       </main>
       <footer className={styles.footer}>
-        <p> Built with Next.js, Tailwind CSS and Material UI. Coded in Visual Studio Code by yours truly. </p>
+        <p> Built with Next.js, React and Material UI. Coded in Visual Studio Code by yours truly. </p>
       </footer>
     </div>
   );

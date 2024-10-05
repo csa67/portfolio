@@ -44,6 +44,10 @@
   margin-left: 60px;
 }
 
+.hello p{
+  font-size:1.25rem;
+}
+
 .hello h2{
   font-size: 4rem;
   color: var(--secondary-color);
@@ -58,13 +62,37 @@
   grid-row-start: 3;
   display: flex;
   justify-content: center;
-  gap: 24px;
   margin-bottom: 8px;
 }
 
 .aboutSection{
   position: relative;
     padding-top: 30px;
+}
+
+@media (max-width:700px) {
+  .hello{
+    width: 100%;
+  }
+
+  .hello p{
+    font-size: 0.75rem;
+  }
+
+  .hello h2{
+    font-size: 2.5rem;
+  }
+
+  .hello h4{
+    font-size: 1rem;
+  }
+
+  .footer{
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0px 40px;
+    margin-bottom: 8px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

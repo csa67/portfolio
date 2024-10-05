@@ -30,5 +30,5 @@
 .Contact a:hover{
     border-color: #f0f0f0;
     transform: translate(-5px,-5px);
-    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 0px var(--secondary-color); 
 }

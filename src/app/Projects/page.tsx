@@ -14,29 +14,43 @@ const projectsList: projectCard[] = [
         id:1,
         title:"Calderon bulldogs",
         projectUrl: "",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus animi pariatur culpa, nulla, asperiores, fugit ipsum et magni officia tempore libero rem necessitatibus exercitationem laboriosam deleniti suscipit voluptatem enim incidunt? ",
-        skills: ["Next.js","tailwind CSS","React","trpc","prisma","postgres"]  
+        description: "Developed an e-commerce site for selling bulldogs, featuring user authentication and integrated payment options for secure transactions. ",
+        skills: ["Next.js", "TailwindCSS", "React", "tRPC", "Prisma", "PostgreSQL"]  
     },
     {
         id:2,
         title:"Watch Now",
         projectUrl: "",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus animi pariatur culpa, nulla, asperiores, fugit ipsum et magni officia tempore libero rem necessitatibus exercitationem laboriosam deleniti suscipit voluptatem enim incidunt? ",
-        skills: ["Kotlin","Android","MVVM"]  
+        description: "Built a movie discovery app allowing users to browse and create personalized watchlists, with efficient API communication and local data persistence.",
+        skills: ["Android Jetpack", "Retrofit", "MVVM", "Kotlin", "XML", "RoomDB"]  
     },
     {
         id:3,
-        title:"E-learning Web platform",
+        title:"E-learning Web Platform",
         projectUrl: "",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus animi pariatur culpa, nulla, asperiores, fugit ipsum et magni officia tempore libero rem necessitatibus exercitationem laboriosam deleniti suscipit voluptatem enim incidunt? ",
-        skills: ["Node.js","React","MondoDB"]  
+        description: "Developed a responsive online learning platform, handling content storage and delivery through AWS S3, ensuring high availability with AWS EC2 deployment.",
+        skills: ["Node.js","React","MongoDB","AWS"]  
     },
     {
         id:4,
-        title:"Calderon bulldogs",
+        title:"Gator Library",
         projectUrl: "",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus animi pariatur culpa, nulla, asperiores, fugit ipsum et magni officia tempore libero rem necessitatibus exercitationem laboriosam deleniti suscipit voluptatem enim incidunt? ",
-        skills: ["Next.js","tailwind CSS","React","trpc","prisma","postgres"]  
+        description: "Designed a library management system to optimize book search and update times, reducing wait times for reservations with efficient data structures. ",
+        skills: ["Java", "Red-Black Tree", "Binary Min-Heap"]  
+    },
+    {
+        id:5,
+        title:"Hangman",
+        projectUrl: "",
+        description: "Developed a Hangman game with a custom dynamic keyboard, utilizing an API for word selection and delivering real-time feedback on user input.",
+        skills: ["Node.js", "React Native", "Expo", "TypeScript"]  
+    },
+    {
+        id:6,
+        title:"Chord Protocol Simulation",
+        projectUrl: "",
+        description: " Developed a scalable peer-to-peer lookup service using the Chord protocol, optimizing performance for distributed systems with consistent hashing and multithreading.",
+        skills: ["F#", ".NET", "AKKA", "Distributed Systems"]  
     }
 ]
 

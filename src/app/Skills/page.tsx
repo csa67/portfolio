@@ -18,22 +18,27 @@ export default function Skills() {
       <div className={styles.skills}>
         <h2> MY SKILLS </h2>
         <div className={styles.skillsContentSections}>
-        <SkillSection
-          title="Frontend Development"
-          skills={["React", "Next.js", "HTML", "CSS", "JavaScript", "TypeScript"]}
-        />
-        <SkillSection
-          title="Backend Development"
-          skills={["Node.js", "Express", "Java", "Spring Boot", "SQL", "NoSQL"]}
-        />
-        <SkillSection
-          title="Android Development"
-          skills={["Jetpack Compose", "Android Jetpack","Dagger/Hilt","Koin","Coroutines","Android Studio"]}
-        />
-        <SkillSection
-          title="Tools & Others"
-          skills={["Git", "Docker", "Jenkins", "Prisma", "JFrog Artifactory"]}
-        />
+        <SkillSection 
+    title="Programming Languages"
+    skills={["C/C++", "Python", "Kotlin", "Java", "HTML", "CSS", "JavaScript", "TypeScript"]}
+/>
+<SkillSection 
+    title="Databases"
+    skills={["SQL: MySQL, PostgreSQL, SQLite", "NoSQL: MongoDB, Prisma"]}
+/>
+<SkillSection 
+    title="Web Development"
+    skills={["React", "Next.js", "Node.js", "Express", "Spring Boot", "Tailwind CSS", "GraphQL"]}
+/>
+<SkillSection
+    title="Android Development"
+    skills={["Kotlin", "Android Studio", "Jetpack Compose", "Android Jetpack", "Dagger/Hilt", "Koin", "Coroutines"]}
+/>
+<SkillSection
+    title="Frameworks & Tools"
+    skills={["Git", "Gradle", "Cloudinary", "TensorFlow", "Tableau", "Microsoft Office", "Jira", "T3 Stack", "AJAX", "Axios", "Linux (Ubuntu)", "JFrog Artifactory", "Figma", "AWS"]}
+/>
+
         </div>
       </div>
     );
