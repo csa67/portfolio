@@ -44,7 +44,7 @@ export default function Home() {
          <Links/>
       </main>
       <footer className={styles.footer}>
-        <p> Built with Next.js, React and Material UI. Coded in Visual Studio Code by yours truly. </p>
+        <p> Developed using Next.js, React, and Material UI, and deployed on Vercel. Coded in Visual Studio Code by yours truly. </p>
       </footer>
     </div>
   );
