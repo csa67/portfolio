@@ -52,6 +52,7 @@
     width: 300px;
     border-radius: 8px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .projectLinks {
@@ -67,14 +68,14 @@
 }
 
 .projectCard h3 {
-    font-size: large; /* Default font size for project titles */
+    font-size: large;
     margin-bottom: 10px;
     color: var(--secondary-color);
 }
 
 .projectCard p {
     max-width: 300px;
-    font-size: medium; /* Default font size for descriptions */
+    font-size: small; /* Default font size for descriptions */
 }
 
 .projectSkills {
@@ -100,9 +101,13 @@
 }
 
 .showMoreButton:hover {
-    border-color: var();
     transform: translate(-5px, -5px);
     box-shadow: 5px 5px 0px var(--secondary-color); /* Shadow to bottom right */
+}
+
+.projectCard:hover{
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 15px var(--foreground);
 }
 
 

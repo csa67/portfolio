@@ -13,35 +13,35 @@ const projectsList: projectCard[] = [
     {
         id:1,
         title:"Calderon bulldogs",
-        projectUrl: "",
+        projectUrl: "https://github.com/altitud-initiative/calderon-bulldogs",
         description: "Developed an e-commerce site for selling bulldogs, featuring user authentication and integrated payment options for secure transactions. ",
         skills: ["Next.js", "TailwindCSS", "React", "tRPC", "Prisma", "PostgreSQL"]  
     },
     {
         id:2,
         title:"Watch Now",
-        projectUrl: "",
+        projectUrl: "https://github.com/csa67/WatchNow",
         description: "Built a movie discovery app allowing users to browse and create personalized watchlists, with efficient API communication and local data persistence.",
         skills: ["Android Jetpack", "Retrofit", "MVVM", "Kotlin", "XML", "RoomDB"]  
     },
     {
         id:3,
         title:"E-learning Web Platform",
-        projectUrl: "",
+        projectUrl: "https://github.com/csa67/e-learning",
         description: "Developed a responsive online learning platform, handling content storage and delivery through AWS S3, ensuring high availability with AWS EC2 deployment.",
         skills: ["Node.js","React","MongoDB","AWS"]  
     },
     {
         id:4,
         title:"Gator Library",
-        projectUrl: "",
+        projectUrl: "https://github.com/csa67/GatorLibrary",
         description: "Designed a library management system to optimize book search and update times, reducing wait times for reservations with efficient data structures. ",
         skills: ["Java", "Red-Black Tree", "Binary Min-Heap"]  
     },
     {
         id:5,
         title:"Hangman",
-        projectUrl: "",
+        projectUrl: "https://github.com/csa67/hangman",
         description: "Developed a Hangman game with a custom dynamic keyboard, utilizing an API for word selection and delivering real-time feedback on user input.",
         skills: ["Node.js", "React Native", "Expo", "TypeScript"]  
     },
@@ -66,9 +66,8 @@ export default function Projects(){
                     <div key={project.id} className={styles.projectCard}>
                         <div className={styles.projectLinks}>
                             <Folder size={24}/>
-                            <ExternalLink size={20} className={styles.linkIcon}>
-                                <a href={project.projectUrl}/>
-                                </ExternalLink>
+                            <a href={project.projectUrl} target="_blank" rel="noopener noreferrer"><ExternalLink size={20} className={styles.linkIcon}/></a>
+                            
                         </div>
                         <h3>{project.title}</h3>
                         <p>{project.description}</p>

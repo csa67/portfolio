@@ -21,7 +21,7 @@ const LeftLinks = () => {
           </a>
         </li>
         <li>
-          <a href="https://www.github.com/csa67" target="_blank" rel="noopener noreferrer" className={styles.linkItem}>
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className={styles.linkItem}>
             <FileText size={20}/>
           </a>
         </li>
