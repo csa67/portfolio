@@ -105,7 +105,7 @@
     box-shadow: 5px 5px 0px var(--secondary-color); /* Shadow to bottom right */
 }
 
-.projectCard:hover{
+.projectCard:hover, .projectCard:active, .projectCard:focus{
     transform: translate(-5px, -5px);
     box-shadow: 5px 5px 15px var(--foreground);
 }

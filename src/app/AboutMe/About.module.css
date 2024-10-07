@@ -41,6 +41,10 @@
 
     .aboutHeader{
         font-size:2rem;
+        width:100%
     }
     
+    .aboutContent{
+        width:80%;
+    }
 }

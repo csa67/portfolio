@@ -23,12 +23,18 @@
     border-radius: 8px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    border-color: black;
+    border-color: 2px solid var(--secondary-color);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.Contact a:hover{
-    border-color: #f0f0f0;
+.Contact a:hover, .Contact a:focus, .Contact a:active{
+    
     transform: translate(-5px,-5px);
     box-shadow: 5px 5px 0px var(--secondary-color); 
+}
+
+@media (max-width: 900px) {
+    .Contact h2{
+        font-size: 2rem;
+    }
 }
