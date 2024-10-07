@@ -35,6 +35,7 @@
 
 @media (max-width: 900px) {
     .Contact h2{
+        width: 100%;
         font-size: 2rem;
     }
 }
