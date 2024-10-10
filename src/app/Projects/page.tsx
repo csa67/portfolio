@@ -63,18 +63,20 @@ export default function Projects(){
             <div className={styles.projects}>
             { 
                 projectsList.map((project) => (
-                    <div key={project.id} className={styles.projectCard}>
-                        <div className={styles.projectLinks}>
-                            <Folder size={24}/>
-                            <a href={project.projectUrl} target="_blank" rel="noopener noreferrer"><ExternalLink size={20} className={styles.linkIcon}/></a>
-                            
+                    <a href={project.projectUrl} target="_blank" rel="noopener noreferrer">
+                        <div key={project.id} className={styles.projectCard}>
+                            <div className={styles.projectLinks}>
+                                <Folder size={24}/>
+                                <ExternalLink size={20} className={styles.linkIcon}/>
+                                
+                            </div>
+                            <h3>{project.title}</h3>
+                            <p>{project.description}</p>
+                            <div className={styles.projectSkills}> 
+                                {project.skills.map((skill,index) => <p key={index} className={styles.projectSkillItem}>{skill}</p> )}
+                            </div>
                         </div>
-                        <h3>{project.title}</h3>
-                        <p>{project.description}</p>
-                        <div className={styles.projectSkills}> 
-                        {project.skills.map((skill,index) => <p key={index} className={styles.projectSkillItem}>{skill}</p> )}
-                        </div>
-                        </div>
+                    </a>
                 ))
                 
             }

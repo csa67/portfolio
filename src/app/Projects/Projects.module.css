@@ -14,35 +14,6 @@
     padding: 20px;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 908px) {
-    .projects {
-        display: flex;
-        flex-direction: column; /* Stacks the cards vertically */
-        align-items: center; /* Centers the items */
-    }
-
-    .projectSection h2 {
-        font-size: 2rem; /* Smaller font size for headings */
-    }
-
-    .projectCard h3 {
-        font-size: medium; /* Smaller font size for project titles */
-    }
-
-    .projectCard p {
-        font-size: small; /* Smaller font size for descriptions */
-    }
-
-    .projectSkillItem {
-        font-size: xx-small; 
-    }
-}
-
-.projectSection h2 {
-    font-size: 2.5rem; /* Default font size for headings */
-}
-
 .projectCard {
     display: flex;
     flex-direction: column;
@@ -95,19 +66,56 @@
 .showMoreButton {
     border-radius: 8px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Initial shadow */
+    margin-top: 8px;
     padding: 20px;
+    border: 2px solid var(--secondary-color);
     cursor: pointer; /* Indicates button is clickable */
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; /* Smooth transitions */
 }
 
-.showMoreButton:hover {
+.showMoreButton:hover, .showMoreButton:active, .showMoreButton:focus {
     transform: translate(-5px, -5px);
-    box-shadow: 5px 5px 0px var(--secondary-color); /* Shadow to bottom right */
+    box-shadow: 5px 5px 0px var(--secondary-color); 
 }
 
 .projectCard:hover, .projectCard:active, .projectCard:focus{
     transform: translate(-5px, -5px);
     box-shadow: 5px 5px 15px var(--foreground);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 908px) {
+    .projects {
+        display: flex;
+        flex-direction: column; /* Stacks the cards vertically */
+        align-items: center; 
+        height: auto;
+    }
+
+    .projectSection h2 {
+        font-size: 2rem; /* Smaller font size for headings */
+    }
+
+    .projectCard h3 {
+        font-size: medium; /* Smaller font size for project titles */
+    }
+
+    .projectCard p {
+        font-size: small; /* Smaller font size for descriptions */
+    }
+
+    .projectSkillItem {
+        font-size: xx-small; 
+    }
+
+    .showMoreButton{
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
+
+.projectSection h2 {
+    font-size: 2.5rem; /* Default font size for headings */
 }
 
 

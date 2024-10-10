@@ -1,3 +1,4 @@
+/* General experience section styles */
 .experience {
     display: flex;
     justify-content: center;
@@ -23,13 +24,13 @@
     position: relative;
 }
 
-/* Company list styles */
+/* Company list styles (vertical on larger screens) */
 .companyList {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Vertical layout by default */
     align-items: flex-start;
     position: relative;
-    margin-left: 40px; /* Add margin as needed */
+    margin-left: 40px;
 }
 
 /* Line before company list */
@@ -37,16 +38,16 @@
     content: '';
     position: absolute;
     top: 0;
-    left: -20px; /* Adjust this value for spacing between list and line */
+    left: -20px;
     height: 100%;
     width: 3px;
-    background-color: #ccc; /* Default line color */
+    background-color: #ccc;
 }
 
-/* Company item styles */
+/* Individual company items */
 .companyItem {
     position: relative;
-    padding-left: 20px; /* Space to keep item away from the line */
+    padding-left: 20px;
     margin: 10px 0;
     cursor: pointer;
     font-weight: 500;
@@ -55,7 +56,7 @@
     width: max-content;
 }
 
-/* Selected company item styles */
+/* Selected company item (vertical layout highlight) */
 .companyItem.selected {
     color: var(--secondary-color);
     font-weight: bold;
@@ -68,7 +69,7 @@
     top: 0;
     height: 100%;
     width: 3px;
-    background-color: var(--secondary-color); 
+    background-color: var(--secondary-color);
 }
 
 /* Role description styles */
@@ -76,7 +77,6 @@
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 20px;
-    /* position: absolute; */
 }
 
 .roleDescription h3 {
@@ -85,47 +85,90 @@
     font-size: 1.25rem;
 }
 
+.roleDescription p{
+    font-style: italic;
+    font-size: 1rem;
+}
+
 .roleDescription ul {
-    list-style-type: disc; /* Default bullet style */
+    list-style-type: square;
     margin-top: 20px;
     padding-left: 20px;
 }
 
 .roleDescription li {
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
+}
+
+.roleDescription li::marker{
+    color: var(--secondary-color);
 }
 
 /* Media query for smaller screens */
 @media (max-width: 900px) {
-    .experience{
+    .experience {
         height: auto;
-        margin:200px 0;
+        margin: 20px 0;
+    }
+
+    .experience h2{
+        font-size: 2rem;
     }
 
     .experienceContent {
-        flex-direction: column; /* Stack the company list and description vertically */
-        align-items: center; /* Center align items */
+        flex-direction: column; /* Stack content vertically on small screens */
+        align-items: center;
+        width: 80%;
     }
 
+    /* Horizontal company list for small screens */
     .companyList {
-        margin-left: 0; /* Remove left margin */
-        position: static; /* Reset position */
+        flex-direction: row; /* Horizontal layout */
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        margin-left: 0;
+        padding: 10px 0;
+        width: 100%;
     }
 
     .companyList::before {
-        display: none; /* Remove the left line */
+        display: none; /* Remove the vertical line for mobile */
     }
 
-    .companyItem{
+    .companyItem {
+        font-size: 1rem;
+        padding: 10px 15px;
+        margin-right: 20px;
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+
+    /* Role description styling adjustments */
+    .roleDescription {
+        padding: 10px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .roleDescription h3 {
         font-size: 1rem;
     }
 
-    .roleDescription {
-        margin-left: 0; /* Remove left margin for description */
-        padding: 10px; /* Adjust padding as needed */
+    .roleDescription p{
+        font-style: italic;
+        font-size: 0.90rem;
     }
 
-    .roleDescription h3{
-        font-size:1rem;
+    .roleDescription li{
+        font-size: 0.9rem;
+    }
+
+    /* Selected company item for mobile (horizontal highlight) */
+    .companyItem.selected {
+        border-bottom: 2px solid var(--secondary-color);
+    }
+
+    .companyItem.selected::before {
+        display: none; /* Remove left line for mobile */
     }
 }
