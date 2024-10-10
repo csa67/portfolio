@@ -63,8 +63,8 @@ export default function Projects(){
             <div className={styles.projects}>
             { 
                 projectsList.map((project) => (
-                    <a href={project.projectUrl} target="_blank" rel="noopener noreferrer">
-                        <div key={project.id} className={styles.projectCard}>
+                    <a key={project.id} href={project.projectUrl} target="_blank" rel="noopener noreferrer">
+                        <div className={styles.projectCard}>
                             <div className={styles.projectLinks}>
                                 <Folder size={24}/>
                                 <ExternalLink size={20} className={styles.linkIcon}/>
